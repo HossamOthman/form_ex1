@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DropDown + Forms</title>
+    <!-- Google fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Fontawesome 4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation - dropdown menu -->
+
+    <nav>
+        <img src="./images/logo.png" alt="....">
+        <ul>
+            <!-- 1th Link -->
+            <li class="li_link">
+                <a href="#">Home</a>
+            </li>
+            <!-- 2th Link -->
+            <li class="li_link">
+                <a href="#">About Me <i class="fa fa-angle-down"></i></a>
+                <div class="sub-menu-1">
+                    <a href="#">Experience</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Education</a>
+                </div>
+            </li>
+            <!-- 3th Link -->
+            <li class="li_link">
+                <a href="#">services <i class="fa fa-angle-down"></i></a>
+                <div class="sub-menu-1">
+                    <a href="#">Web Designing</a>
+
+
+
+                    <div class="nested_li_link">
+                        <a href="#">Marketing <i class="fa fa-angle-right"></i></a>
+                        <div class="sub-menu-2">
+                            <a href="#">SEO</a>
+                            <a href="#">Social Media</a>
+                            <a href="#">Email Marketing</a>
+                        </div>
+
+                    </div>
+
+
+
+                    <a href="#">Mobole App</a>
+                </div>
+            </li>
+            <!-- 4th Link -->
+            <li class="li_link">
+                <a href="#">Clients</a>
+            </li>
+            <!-- 5th Link -->
+            <li class="li_link">
+                <a href="#">Pricing</a>
+            </li>
+            <!-- 6th Link -->
+            <li class="li_link">
+                <a href="#">Training</a>
+            </li>
+            <!-- 7th Link -->
+            <li class="li_link">
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Form -->
+    <main>
+        <div class="banner">
+            <h1>Training Program Form</h1>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Application Details</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="fname" id="name" placeholder="First Name">
+                    <input type="text" name="lname" id="name" placeholder="Last Name">
+                </div>
+                <div>
+                    <label for="Phone">Phone</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="fax">Fax</label>
+                    <input type="text" name="fax" id="fax">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="Coname">Company Name</label>
+                    <input type="text" name="coname" id="coname">
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <input type="text" name="address1" id="address" placeholder="Address 1">
+                    <input type="text" name="address2" id="address" placeholder="Address 2">
+                    <input type="text" name="city" id="address" placeholder="City">
+                    <input type="text" name="region" id="address" placeholder="Region">
+                    <input type="text" name="zipcode" id="address" placeholder="Postal / Zip Code">
+                    <select name="country" id="country">
+                    <option value="country">country</option>
+                    <option value="italy">Italy</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                    <option value="england">England</option>
+                    <option value="usa">USA</option>
+                </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Details</legend>
+                <div>
+                    <label for="coursecode">Course Code</label>
+                    <input type="text" name="Coursecode" id="coursecode">
+                </div>
+                <div>
+                    <label for="Location">Course Code</label>
+                    <input type="text" name="location" id="location">
+                </div>
+                <div>
+                    <label for="startdate">start Date</label>
+                    <input type="date" id="startdate" name="startdate" min="2020-01-01" max="2022-12-31" required>
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Distributor Details</legend>
+                <div>
+                    <label for="contactname">Contact Name</label>
+                    <input type="text" name="contactname" id="contactname">
+                </div>
+                <div>
+                    <label for="dname">Distributor Name</label>
+                    <input type="text" name="dname" id="dname">
+                </div>
+                <div>
+                    <label for="daddress">Distributor Address</label>
+                    <input type="text" name="daddress1" id="daddress" placeholder="Address 1">
+                    <input type="text" name="daddress2" id="daddress" placeholder="Address 2">
+                    <input type="text" name="dcity" id="dadddress" placeholder="City">
+                    <input type="text" name="dregion" id="daddress" placeholder="Region">
+                    <input type="text" name="dzipcode" id="daddress" placeholder="Postal / Zip Code">
+                    <select name="country" id="country">
+                        <option value="country">country</option>
+                        <option value="italy">Italy</option>
+                        <option value="germany">Germany</option>
+                        <option value="france">France</option>
+                        <option value="england">England</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <div>
+                        <label for="dphone">Phone</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div>
+                        <label for="dfax">Fax</label>
+                        <input type="text" name="dfax" id="dfax">
+                    </div>
+            </fieldset>
+
+            <div class="policy">
+                <h4>Privacy Policy*</h4>
+
+                <div>
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">I agree to the <a href="#">privacy policy</a></label>
+                </div>
+
+                <button type="submit">Send</button>
+            </div>
+
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>
